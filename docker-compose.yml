@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  php-dev:
+    container_name: php-dev
+    build: .
+    tty: true
+    volumes:
+    - ./php-src/:/usr/src/php/
