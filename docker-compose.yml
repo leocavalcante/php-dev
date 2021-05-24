@@ -2,7 +2,10 @@ version: '3.9'
 services:
   php-dev:
     container_name: php-dev
+    image: php-dev
+    entrypoint: bash
     build: .
     tty: true
     volumes:
     - ./php-src/:/usr/src/php/
+    - ./sandbox/:/usr/local/src/
